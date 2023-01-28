@@ -12,18 +12,17 @@
 
 .weather {
     background-color: var(--BgW);
-    padding: 1.5em 0.5em;
+    padding: 1em 1em 1.5em;
     border-radius: 1rem;
     max-width: 500px;
-
     overflow: hidden;
     position: relative;
 }
 
 .header__weather {
     text-align: center;
-    line-height: 4em;
-    font-size: 1.2rem;
+    line-height: 4.5em;
+    font-size: 1.1rem;
 }
 
 .header__weather h1 {
@@ -33,7 +32,7 @@
 }
 
 .header__weather h3 {
-    margin-bottom: -1.5em ;
+    margin-bottom: -1.8em ;
     color: var(--LtW);
 }
 
@@ -47,13 +46,13 @@
     position: absolute;
     width: 110%;
     height: 105%;
-    margin-top: 6px;
     opacity: 0.15;
 }
 
 .weather__img {
-    width: 250px;
+    width: 220px;
     margin-left: -2em;
+    align-self: center;
     transition: transform 0.5s ease;
     z-index: var(--Zi1);
 }
@@ -63,13 +62,12 @@
 }
 
 .weather__info {
-    padding: 0 1.2em 0 0;
     z-index: var(--Zi1);
 }
 
 .weather__info h3 {
-    font-size: 1.4rem;
-    padding: 3rem 0 1rem 0;
+    font-size: 1.2rem;
+    padding: 3.2rem 0 0.5rem 0;
     text-align: center;
 }
 
@@ -77,7 +75,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight:600;
 }
 
@@ -91,8 +89,9 @@
     flex-direction: column;
     gap: 1em;
     align-items: center;
-    margin: -2em 0 1em 0;
-    font-size: 1.4rem;
+    margin: -1em 0 0 0;
+    font-size: 1.6rem;
+    padding-top: 1em;
 }
 
 .footer__weather button {
@@ -113,14 +112,17 @@
 @media (max-width: 400px) {
 
     .weather {
-        max-width: 300px;
+        max-width: 320px;
+    }
+    .weather__img {
+        width: 200px;
     }
 
-    .weather__info {
-        padding: 0;
+    .weather__info h3 {
+        font-size: 1rem;
     }
-    .footer__weather {
-        margin: 0;
-        padding-top: 1em;
+
+    .weather__info ul li {
+        font-size: 0.8rem;
     }
 }
