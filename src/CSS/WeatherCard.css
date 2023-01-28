@@ -1,12 +1,14 @@
 :root {
     --BgW: rgba(43, 131, 166, 0.812);
     --LtW: aliceblue;
-    --Zi1: -1;
+    --Zi1: 5000;
+    --Zi2: 10000;
 }
 
 .main {
     display: grid;
     align-items: center;
+    user-select: none;
 }
 
 .weather {
@@ -16,6 +18,7 @@
     max-width: 500px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .header__weather {
@@ -54,6 +57,7 @@
     margin-left: -2em;
     align-self: center;
     transition: transform 0.5s ease;
+    z-index: var(--Zi2);
 }
 
 .weather__img:hover {
@@ -97,6 +101,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.5s ease;
+    z-index: var(--Zi2);
 }
 
 .footer__weather button:hover {
