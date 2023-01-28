@@ -1,8 +1,7 @@
-
 :root {
     --BgW: rgba(43, 131, 166, 0.812);
     --LtW: aliceblue;
-    --Zi1: 10000;
+    --Zi1: -1;
 }
 
 .main {
@@ -47,6 +46,7 @@
     width: 110%;
     height: 105%;
     opacity: 0.15;
+    z-index: var(--Zi1);
 }
 
 .weather__img {
@@ -54,15 +54,10 @@
     margin-left: -2em;
     align-self: center;
     transition: transform 0.5s ease;
-    z-index: var(--Zi1);
 }
 
 .weather__img:hover {
     transform: rotate(8deg);
-}
-
-.weather__info {
-    z-index: var(--Zi1);
 }
 
 .weather__info h3 {
@@ -89,7 +84,7 @@
     flex-direction: column;
     gap: 1em;
     align-items: center;
-    margin: -1em 0 0 0;
+    margin: -1.2em 0 0.2em 0;
     font-size: 1.6rem;
     padding-top: 1em;
 }
@@ -102,7 +97,6 @@
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.5s ease;
-    z-index: var(--Zi1);
 }
 
 .footer__weather button:hover {
