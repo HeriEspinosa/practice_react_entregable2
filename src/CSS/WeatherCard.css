@@ -109,7 +109,7 @@
         max-width: 320px;
     }
     .weather__img {
-        width: 160px;
+        width: 180px;
     }
 
     .weather__info h3 {
@@ -117,6 +117,6 @@
     }
 
     .weather__info ul li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
