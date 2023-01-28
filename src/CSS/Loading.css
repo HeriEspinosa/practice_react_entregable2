@@ -1,0 +1,39 @@
+
+:root {
+    --Bg: black;
+    --Cc: darkred;
+    --Lt: lavender;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading {
+    background-color: var(--Bg);
+    width: 100vw;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.container__loading {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--Cc);
+    animation: animation 1s infinite;
+    border-top: inherit;
+}
+
+@keyframes animation {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+h2 {
+    color: var(--Lt);
+}
