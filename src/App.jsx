@@ -53,6 +53,9 @@ function App() {
           temperature={temperature}
       />
       }
+      <div className='hr__code'>
+        <a href="https://github.com/HeriEspinosa/repo_react_entregable2.git"><p>Hecha un Vistazo a mi Codigo <span>Aqui</span></p></a>
+      </div>
     </div>
   )
 }
