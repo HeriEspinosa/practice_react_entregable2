@@ -112,6 +112,10 @@
 
 @media (max-width: 400px) {
 
+    .weather {
+        max-width: 300px;
+    }
+
     .weather__info {
         padding: 0;
     }
